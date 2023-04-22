@@ -1,251 +1,761 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <link rel="shortcut icon" href="img/galaxy.webp" type="image/x-icon">
-    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
-    <title>Solar</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+        <link rel="shortcut icon" href="img/galaxy.webp" type="image/x-icon">
+        <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+        <title>Solar</title>
+    </head>
 
-<body style="background-image: url(img/bg.webp);">
-    <!--Menu NavBar-->
-    <nav id="home" class="navbar col-12 position-fixed navbar-expand-lg navbar-dark bg-dark" style="z-index: 999;">
-        <div class="container-fluid col-11 m-auto">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+    <body style="background-image: url(img/bg.webp);">
+        <!--Menu NavBar-->
+        <nav id="home" class="navbar col-12 position-fixed navbar-expand-lg
+            navbar-dark bg-dark" style="z-index: 999;">
+            <div class="container-fluid col-11 m-auto">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#celestes">Corpos Celestes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#conteudo">Conteúdo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page"
+                                href="#footer">Direitos</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!--Carrossel-->
+
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/mercurio.gif" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/venus.gif" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/terra.gif" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/marte.gif" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/jupiter.gif" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/saturn.gif" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/urano.gif" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/netuno.gif" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button"
+                data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#celestes">Corpos Celestes</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#conteudo">Conteúdo</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#footer">Direitos</a>
-                    </li>
-
-                </ul>
-            </div>
+            <button class="carousel-control-next" type="button"
+                data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
-    </nav>
-
-    <!--Carrossel-->
-
-    <div id="carouselExample" class="carousel slide">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="img/mercurio.gif" class="d-block w-100">
-            </div>
-            <div class="carousel-item">
-                <img src="img/venus.gif" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="img/terra.gif" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="img/marte.gif" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="img/jupiter.gif" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="img/saturn.gif" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="img/urano.gif" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="img/netuno.gif" class="d-block w-100" alt="...">
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
 
 
-    <!--Cards-->
-    <h2 style="color: antiquewhite;" class="text-center">Corpos Celestes</h2>
+        <!--Cards-->
+        <h2 style="color: antiquewhite;" class="text-center">Corpos Celestes</h2>
+        <!--Planetas-->
+        <div class="row row-cols-1 row-cols-md-4 g-4 col-11 m-auto"
+            id="celestes">
+            <div class="col">
+                <div class="card">
+                    <img src="img/terra.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Planetas</h5>
+                                <p class="card-text">formado por oito planetas:
+                                    Mercúrio, Vênus, Terra, Marte, Júpiter,
+                                    Saturno, Urano e Netuno.</p>
 
-    <!--Planetas-->
-    <div class="row row-cols-1 row-cols-md-4 g-4 col-11 m-auto" id="celestes">
-        <div class="col">
-            <div class="card">
-                <img src="img/terra.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Planetas<h5>
-                            <p class="card-text">formado por oito planetas: Mercúrio, Vênus, Terra, Marte, Júpiter,
-                                Saturno, Urano e Netuno.</p>
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-primary"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal1">
+                                    Ver Mais...
+                                </button>
 
-                            <!-- Button trigger modal -->
-                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                data-bs-target="#exampleModal1">
-                                Ver Mais...
-                            </button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal1"
+                                    tabindex="-1"
+                                    aria-labelledby="exampleModalLabel"
+                                    aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h1 class="modal-title fs-5"
+                                                    id="exampleModalLabel">Modal
+                                                    title</h1>
+                                                <button type="button"
+                                                    class="btn-close"
+                                                    data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <img src="img/planetas.webp"
+                                                    alt="" width="100%">
+                                                <p>
+                                                    Os oito planetas do Sistema
+                                                    Solar apresentam
+                                                    características distintas
+                                                    conforme a sua constituição,
+                                                    são eles:
+                                                    <ul>
+                                                        <li>
 
-                            <!-- Modal -->
-                            <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel"
-                                aria-hidden="true">
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                aria-label="Close"></button>
-                                        </div>
-                                        <div class="modal-body" >
-                                            <img src="img/planetas.webp" alt="" width="100%">
-                                            <p>
-                                                Os oito planetas do Sistema Solar apresentam características distintas
-                                                conforme a sua constituição, são eles:
-                                                <ul>
-                                                    <li>
+                                                            Mercúrio: o mais
+                                                            próximo do Sol e o
+                                                            menor entre os
+                                                            planetas do Sistema
+                                                            Solar. Ele não
+                                                            possui satélites,
+                                                            tampouco condições
+                                                            de vida, sendo
+                                                            especialmente
+                                                            marcado por suas
+                                                            altas temperaturas.
+                                                            A sua proximidade do
+                                                            Sol e a sua
+                                                            atmosfera incompleta
+                                                            condicionam suas
+                                                            temperaturas
+                                                            elevadíssimas.
+                                                        </li>
+                                                        <li>
+                                                            Vênus: apresenta
+                                                            temperaturas ainda
+                                                            mais elevadas do que
+                                                            Mercúrio.
+                                                            Possui uma dimensão
+                                                            e também uma
+                                                            constituição muito
+                                                            próxima da Terra,
+                                                            sendo formado por
+                                                            diversos grupos de
+                                                            rochas. Ele é
+                                                            popularmente
+                                                            conhecido como
+                                                            Estrela D’alva em
+                                                            razão da sua
+                                                            luminosidade vista
+                                                            da
+                                                            Terra.
+                                                        </li>
+                                                        <li>
+                                                            Terra: é o único
+                                                            planeta que
+                                                            apresenta condições
+                                                            de vida entre os
+                                                            constituintes do
+                                                            Sistema Solar. A
+                                                            Terra realiza
+                                                            movimentos ao redor
+                                                            de
+                                                            si mesma, rotação, e
+                                                            em torno do Sol,
+                                                            translação. É um
+                                                            planeta rochoso,
+                                                            formado por diversos
+                                                            silicatos e
+                                                            basaltos, além de
+                                                            possuir atmosfera
+                                                            bem
+                                                            desenvolvida.
+                                                        </li>
+                                                        <li>
 
-                                                        Mercúrio: o mais próximo do Sol e o menor entre os planetas do Sistema
-                                                        Solar. Ele não possui satélites, tampouco condições de vida, sendo
-                                                        especialmente marcado por suas altas temperaturas. A sua proximidade do
-                                                        Sol e a sua atmosfera incompleta condicionam suas temperaturas
-                                                        elevadíssimas.
-                                                    </li>
-                                                    <li>
-                                                        Vênus: apresenta temperaturas ainda mais elevadas do que Mercúrio.
-                                                        Possui uma dimensão e também uma constituição muito próxima da Terra,
-                                                        sendo formado por diversos grupos de rochas. Ele é popularmente
-                                                        conhecido como Estrela D’alva em razão da sua luminosidade vista da
-                                                        Terra.
-                                                    </li>
-                                                    <li>
-                                                        Terra: é o único planeta que apresenta condições de vida entre os
-                                                        constituintes do Sistema Solar. A Terra realiza movimentos ao redor de
-                                                        si mesma, rotação, e em torno do Sol, translação. É um planeta rochoso,
-                                                        formado por diversos silicatos e basaltos, além de possuir atmosfera bem
-                                                        desenvolvida.
-                                                    </li>
-                                                    <li>
+                                                            Marte: o chamado
+                                                            Planeta Vermelho,
+                                                            composto por
+                                                            silicatos e
+                                                            basaltos, é
+                                                            um dos mais
+                                                            estudados pela
+                                                            astronomia
+                                                            terrestre. Apresenta
+                                                            condições
+                                                            climáticas adversas,
+                                                            sendo muito frio e
+                                                            seco. Há dois
+                                                            satélites
+                                                            artificias em Marte.
+                                                            O planeta, assim
+                                                            como a Terra,
+                                                            realiza movimentos
+                                                            de rotação e
+                                                            translação.
+                                                        </li>
+                                                        <li>
+                                                            Júpiter: o maior
+                                                            planeta do Sistema
+                                                            Solar é formado por
+                                                            diversos gases.
+                                                            Nele, há a
+                                                            ocorrência de
+                                                            inúmeros satélites
+                                                            naturais, conhecidos
+                                                            como as
+                                                            Luas Galileanas
+                                                            (descobertas por
+                                                            Galileu Galilei),
+                                                            que o orbitam. Os
+                                                            principais gases
+                                                            encontrados em
+                                                            Júpiter são
+                                                            hidrogênio, hélio e
+                                                            metano.
 
-                                                        Marte: o chamado Planeta Vermelho, composto por silicatos e basaltos, é
-                                                        um dos mais estudados pela astronomia terrestre. Apresenta condições
-                                                        climáticas adversas, sendo muito frio e seco. Há dois satélites
-                                                        artificias em Marte. O planeta, assim como a Terra, realiza movimentos
-                                                        de rotação e translação.
-                                                    </li>
-                                                    <li>
-                                                        Júpiter: o maior planeta do Sistema Solar é formado por diversos gases.
-                                                        Nele, há a ocorrência de inúmeros satélites naturais, conhecidos como as
-                                                        Luas Galileanas (descobertas por Galileu Galilei), que o orbitam. Os
-                                                        principais gases encontrados em Júpiter são hidrogênio, hélio e metano.
-        
-                                                    </li>
-                                                    <li>
-                                                        Saturno: é conhecido pelos seus grandes anéis. Essas estruturas são
-                                                        formadas por partículas de gelo e rocha. Em Saturno, há o predomínio de
-                                                        gases diversos, como hidrogênio e hélio.
-        
-                                                    </li>
-                                                    <li>
-                                                        Urano: está muito distante do Sol, sendo o segundo em distância, logo
-                                                        abaixo de Netuno. O planeta é formado por gases diversos. Assim com os
-                                                        outros planetas gasosos, possui vários satélites artificiais e também
-                                                        realiza movimentos planetários.
-        
-                                                    </li>
-                                                    <li>
-                                                        Netuno: o planeta mais distante do Sol, é formado por diversos gases,
-                                                        como hidrogênio, hélio e metano. A cor azul, característica de planeta,
-                                                        é justamente ocasionada pela formação gasosa dele.
-                                                    </li>
-                                                </ul>
+                                                        </li>
+                                                        <li>
+                                                            Saturno: é conhecido
+                                                            pelos seus grandes
+                                                            anéis. Essas
+                                                            estruturas são
+                                                            formadas por
+                                                            partículas de gelo e
+                                                            rocha. Em Saturno,
+                                                            há o predomínio de
+                                                            gases diversos, como
+                                                            hidrogênio e hélio.
+                                                        </li>
+                                                        <li>
+                                                            Urano: está muito
+                                                            distante do Sol,
+                                                            sendo o segundo em
+                                                            distância, logo
+                                                            abaixo de Netuno. O
+                                                            planeta é formado
+                                                            por gases diversos.
+                                                            Assim com os
+                                                            outros planetas
+                                                            gasosos, possui
+                                                            vários satélites
+                                                            artificiais e também
+                                                            realiza movimentos
+                                                            planetários.
 
-                                            </p>
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary"
-                                                data-bs-dismiss="modal">Close</button>
+                                                        </li>
+                                                        <li>
+                                                            Netuno: o planeta
+                                                            mais distante do
+                                                            Sol, é formado por
+                                                            diversos gases,
+                                                            como hidrogênio,
+                                                            hélio e metano. A
+                                                            cor azul,
+                                                            característica de
+                                                            planeta,
+                                                            é justamente
+                                                            ocasionada pela
+                                                            formação gasosa
+                                                            dele.
+                                                        </li>
+                                                    </ul>
 
+                                                </p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn
+                                                    btn-secondary"
+                                                    data-bs-dismiss="modal">Close</button>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+
+                    <!--Luas-->
+                    <div class="col">
+                        <div class="card">
+                            <img src="img/lua.jpg" class="card-img-top"
+                                alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Luas</h5>
+                                <p class="card-text">Há cerca de 150 luas
+                                    orbitando os planetas do nosso sistema
+                                    solar. A Terra tem
+                                    apenas um satélite natural — a Lua.</p>
+
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-primary"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#luas">
+                                    Ver Mais ...
+                                </button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="luas"
+                                    tabindex="-1"
+                                    aria-labelledby="exampleModalLabel"
+                                    aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h1 class="modal-title fs-5"
+                                                    id="exampleModalLabel">Modal
+                                                    title</h1>
+                                                <button type="button"
+                                                    class="btn-close"
+                                                    data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <img src="img/luas.webp"
+                                                    alt="" width="100%">
+                                                <p>
+                                                    Satélites naturais, chamados
+                                                    de luas, são corpos celestes
+                                                    sólidos que orbitam
+                                                    planetas.
+
+                                                    Há luas de todos os tamanhos
+                                                    e formas, e aproximadamente
+                                                    200 orbitam os planetas do
+                                                    nosso Sistema Solar.
+
+                                                    Entre os planetas
+                                                    terrestres, somente Mercúrio
+                                                    e Vênus não têm luas.
+
+                                                    A Terra tem um satélite
+                                                    natural, a Lua. Marte tem
+                                                    dois, chamados de Fobos e
+                                                    Deimos.
+
+                                                    Júpiter, Saturno, Urano e
+                                                    Netuno – denominados
+                                                    gigantes gasosos – têm mais
+                                                    de 100 luas confirmadas.
+
+                                                    A explicação dos cientistas
+                                                    para a grande quantidade de
+                                                    satélites naturais desses
+                                                    planetas está em seus campos
+                                                    gravitacionais, que seriam
+                                                    intensos o suficiente para
+                                                    atrair e capturar outros
+                                                    objetos.
+
+                                                    O planeta com o maior número
+                                                    de satélites naturais do
+                                                    Sistema Solar é Saturno, com
+                                                    82 satélites conhecidos.
+                                                    Titã é o maior satélite
+                                                    natural de Saturno, e o
+                                                    segundo maior do sistema
+                                                    solar.
+
+                                                    O gigante Júpiter é orbitado
+                                                    por 79 luas conhecidas, cuja
+                                                    característica está em
+                                                    movimentos de revolução
+                                                    opostos ao planeta. O maior
+                                                    satélite natural do Sistema
+                                                    Solar é o Ganimedes, de
+                                                    Júpiter. Ele possui 5268 km
+                                                    de diâmetro.
+
+                                                    Em torno do planeta Urano
+                                                    orbitam 27 satélites
+                                                    naturais conhecidos, sendo a
+                                                    lua Miranda a de maior
+                                                    destaque.
+
+                                                    Outro planeta que exibe uma
+                                                    grande quantidade de
+                                                    satélites naturais é Netuno,
+                                                    com 14, sendo o maior
+                                                    Tritão, cujas dimensões são
+                                                    semelhantes aos do
+                                                    planeta-anão Plutão.
+                                                </p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn
+                                                    btn-secondary"
+                                                    data-bs-dismiss="modal">Close</button>
+                                                <button type="button" class="btn
+                                                    btn-primary">Save changes</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Cometas-->
+                    <div class="col">
+                        <div class="card">
+                            <img src="img/cometa.webp" class="card-img-top"
+                                alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Cometas</h5>
+                                <p class="card-text">Os cometas são os únicos
+                                    pequenos objectos do Sistema Solar que se
+                                    conhecem
+                                    desde a mais remota Antiguidade.</p>
+
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-primary"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#cometas">
+                                    Ver Mais...
+                                </button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="cometas"
+                                    tabindex="-1"
+                                    aria-labelledby="exampleModalLabel"
+                                    aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h1 class="modal-title fs-5"
+                                                    id="exampleModalLabel">Modal
+                                                    title</h1>
+                                                <button type="button"
+                                                    class="btn-close"
+                                                    data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <img src="img/cometas.gif"
+                                                    alt="" width="100%">
+                                                <p>
+                                                    "Cometa é o menor corpo
+                                                    contido no sistema solar,
+                                                    possui semelhança com um
+                                                    asteroide e é constituído,
+                                                    majoritariamente, por gelo.
+                                                    No passado, os cometas
+                                                    produziam nas pessoas medos
+                                                    e superstições e na
+                                                    contemporaneidade causa uma
+                                                    enorme curiosidade.
+
+                                                    Eles podem ser periódicos
+                                                    (como é o caso do cometa
+                                                    Halley, que passa pelo
+                                                    sistema solar em intervalos
+                                                    de cerca de 76 anos) e não
+                                                    periódicos, que são aqueles
+                                                    que entram e saem
+                                                    rapidamente no sistema solar
+                                                    em direção ao espaço
+                                                    interestelar. Um cometa
+                                                    possui uma estrutura física
+                                                    dividida em três partes:
+                                                    núcleo, cabeleira ou coma e
+                                                    cauda.
+
+
+                                                    Cometa Hale-Bopp
+
+                                                    Eles podem ser periódicos
+                                                    (como é o caso do cometa
+                                                    Halley, que passa pelo
+                                                    sistema solar em intervalos
+                                                    de cerca de 76 anos) e não
+                                                    periódicos, que são aqueles
+                                                    que entram e saem
+                                                    rapidamente no sistema solar
+                                                    em direção ao espaço
+                                                    interestelar. Um cometa
+                                                    possui uma estrutura física
+                                                    dividida em três partes:
+                                                    núcleo, cabeleira ou coma e
+                                                    cauda.
+
+                                                    Núcleo: essa parte do cometa
+                                                    possui poucos quilômetros de
+                                                    diâmetro, nele se originam a
+                                                    maioria dos fenômenos de um
+                                                    cometa. Quando essa
+                                                    estrutura passa próximo ao
+                                                    Sol gera a cauda do cometa,
+                                                    produzindo uma grande
+                                                    quantidade de matéria. A
+                                                    matéria que constitui o
+                                                    núcleo possui um peso que
+                                                    pode variar de 1.0kg até
+                                                    dezenas de toneladas.
+                                                    Cabeleira ou coma: é uma
+                                                    parte nebulosa que se
+                                                    encontra em cima do núcleo,
+                                                    constituída basicamente por
+                                                    hidrogênio, oxigênio e água
+                                                    no estado sólido.
+
+                                                    Cauda: é uma das unidades de
+                                                    um cometa que surge a partir
+                                                    de ventos solares. Cada vez
+                                                    que o cometa se aproxima do
+                                                    Sol, o seu diâmetro diminui
+                                                    alguns metros. Existem dois
+                                                    tipos de caudas: uma formada
+                                                    por poeira e outra
+                                                    eletromagnética."
+
+                                                    Veja mais sobre "Cometa" em:
+                                                    <a href="http://brasilescola.uol.com.br/geografia/cometa.htm">Brasil Escola</a>
+                                                    
+                                                </p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn
+                                                    btn-secondary"
+                                                    data-bs-dismiss="modal">Close</button>
+                                                <button type="button" class="btn
+                                                    btn-primary">Save changes</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Estrelas-->
+                    <div class="col">
+                        <div class="card">
+                            <img src="img/sol.jpg" class="card-img-top"
+                                alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Estrela</h5>
+                                <p class="card-text">O Sol é a estrela mais
+                                    próxima da Terra, dista aproximadamente 150
+                                    milhões de
+                                    quilômetros de nós, é quem mantém as orbitas</p>
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-primary"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#sol">
+                                    Ver Mais...
+                                </button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="sol"
+                                    tabindex="-1"
+                                    aria-labelledby="exampleModalLabel"
+                                    aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h1 class="modal-title fs-5"
+                                                    id="exampleModalLabel">Modal
+                                                    title</h1>
+                                                <button type="button"
+                                                    class="btn-close"
+                                                    data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <img src="img/sol.webp"
+                                                    alt="" width="100%">
+                                                <p>
+                                                    O Sol é uma estrela com
+                                                    diâmetro de 1 392 700 km, ou
+                                                    seja, 109 vezes maior que o
+                                                    da Terra, com 12 742 km.
+                                                    Isso quer dizer que
+                                                    poderíamos enfileirar 109
+                                                    planetas Terras ao seu lado.
+                                                    Ele está localizado no
+                                                    centro de nosso sistema
+                                                    planetário, o Sistema Solar.
+                                                    Mas, apesar de ser muito
+                                                    maior do que a Terra, em
+                                                    comparação com outras
+                                                    estrelas, esse astro não é
+                                                    assim tão grande. Uma das
+                                                    maiores estrelas conhecidas,
+                                                    a VY Canis Majoris, é cerca
+                                                    de 2 mil vezes maior do que
+                                                    o Sol.
+
+                                                    O Sol contém quase que a
+                                                    totalidade da massa do
+                                                    sistema solar, cerca de
+                                                    99,8%. É em virtude de sua
+                                                    massa que os planetas
+                                                    orbitam à sua volta.
+
+                                                    Sua composição é basicamente
+                                                    hidrogênio e hélio. É
+                                                    justamente a fusão nuclear
+                                                    do hidrogênio a fonte de sua
+                                                    energia, liberada na forma
+                                                    de luz e calor. Ao fundirem
+                                                    seus núcleos, átomos de
+                                                    hidrogênio formam o hélio.
+
+                                                    O Sol também é o responsável
+                                                    direto pela manutenção da
+                                                    vida em nosso planeta,
+                                                    devido sua luz, utilizada
+                                                    pelas plantas na
+                                                    fotossíntese. Sua energia
+                                                    também fornece calor para
+                                                    Terra, que mantém a
+                                                    temperatura adequada para a
+                                                    vida. Sua gravidade também
+                                                    influencia as marés nos
+                                                    oceanos.
+
+                                                    As principais
+                                                    características do Sol
+                                                    Massa: 1 vírgula 989 sinal
+                                                    de multiplicação 10 à
+                                                    potência de 30 espaço kg
+                                                    (300 000 vezes a massa da
+                                                    Terra)
+
+                                                    Raio: 696 342 km
+
+                                                    Densidade média: 1,409 g/cm³
+                                                    Distância da Terra: 149 600
+                                                    000 km
+
+                                                    Luminosidade: 3 vírgula 9
+                                                    sinal de multiplicação 10 à
+                                                    potência de 26 watts = 3
+                                                    vírgula 9 sinal de
+                                                    multiplicação 10 à potência
+                                                    de 33 ergs/s
+
+                                                    Temperatura superficial: 5,5
+                                                    mil graus Celsius
+                                                    Temperatura central: 15
+                                                    milhões de graus Celsius
+                                                    Idade: 4,6 bilhões de anos
+                                                </p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn
+                                                    btn-secondary"
+                                                    data-bs-dismiss="modal">Close</button>
+                                                <button type="button" class="btn
+                                                    btn-primary">Save changes</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
-            </div>
-        </div>
 
-        <!--Luas-->
-        <div class="col">
-            <div class="card">
-                <img src="img/lua.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Luas</h5>
-                    <p class="card-text">Há cerca de 150 luas orbitando os planetas do nosso sistema solar. A Terra tem
-                        apenas um satélite natural — a Lua.</p>
+                <!--Conteúdo-->
+                <br><br>
+                <hr  class="col-11 m-auto" style="color:
+                    antiquewhite;" />
+                <div class="coll-11 m-auto" id="conteudo">
+                    <h2 class="text-center" style="color: azure;">Sistema Solar</h2>
+                    <p class="text-center" style="color: azure;">O Sistema Solar
+                        é uma estrutura astronômica formada por oito planetas,
+                        além de diversos outros corpos celestes, que orbitam o
+                        Sol. Sua origem, conforme estudos científicos diversos,
+                        foi possível mediante o colapso de uma nuvem de objetos
+                        celestes. O Sistema Solar é formado por oito planetas:
+                        Mercúrio, Vênus, Terra, Marte, Júpiter, Saturno, Urano e
+                        Netuno. Já Plutão, anteriormente classificado como
+                        planeta, foi rebaixado para planeta anão. Além dos
+                        planetas, há diversos corpos celestes que fazem parte do
+                        nosso sistema, como os satélites naturais, além de
+                        asteroides, cometas e meteoroides.</p>
+
+                    <h5 class="text-center" style="color: azure;">
+                        Resumo sobre Sistema Solar
+                    </h5>
+
+                    <p class="text-center" style="color: azure;">
+                        <ul class="text-center" style="color: azure;">
+                            <li>A origem do Sistema Solar é explicada pela
+                                teoria da
+                                nebulosa solar, que defende que um colapso deu
+                                origem
+                                aos planetas assim como aos demais objetos do
+                                espaço.
+                                Atualmente, ele é formado por oito planetas,
+                                sendo eles:
+                                Mercúrio, Vênus, Terra, Marte, Júpiter, Saturno,
+                                Urano e
+                                Netuno.</li>
+                                <br>
+                            <li> Os chamados planetas rochosos, mais próximos do
+                                Sol, são
+                                formados predominantemente por rochas.</li>
+                                <br>
+                            <li> Já os planetas gasosos, localizados mais
+                                distantes do
+                                Sol, são constituídos por gases diversos.</li>
+                                <br>
+                            <li> O caso de Plutão é emblemático, uma vez que o
+                                planeta
+                                foi reclassificado para planeta anão em razão,
+                                entre
+                                outros, do seu tamanho reduzido.</li>
+                                <br>
+                            <li> O sistema é composto por diversos corpos
+                                celestes, como
+                                asteroides, cometas e meteoroides.</li>
+                                <br>
+                            <li>
+                                Uma curiosidade sobre ele é que há diversos
+                                satélites
+                                naturais, as luas, que orbitam os planetas.</li>
+                        </ul>
+                    </p>
                 </div>
-            </div>
-        </div>
+                <hr class="col-11 m-auto" style="color: antiquewhite;" />
+                <br><br>
 
-        <!--Cometas-->
-        <div class="col">
-            <div class="card">
-                <img src="img/cometa.webp" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Cometas</h5>
-                    <p class="card-text">Os cometas são os únicos pequenos objectos do Sistema Solar que se conhecem
-                        desde a mais remota Antiguidade.</p>
-                </div>
-            </div>
-        </div>
+                <!--Rodapé-->
 
-        <!--Estrelas-->
-        <div class="col">
-            <div class="card">
-                <img src="img/sol.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Estrela</h5>
-                    <p class="card-text">O Sol é a estrela mais próxima da Terra, dista aproximadamente 150 milhões de
-                        quilômetros de nós, é quem mantém as orbitas</p>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-    <!--Conteúdo-->
-    <br><br>
-    <hr id="conteudo" class="col-11 m-auto" style="color: antiquewhite;" />
-    <div class="coll-11 m-auto">
-        <h2 class="text-center" style="color: azure;">Sistema Solar</h2>
-        <p class="text-center" style="color: azure;">O Sistema Solar compreende o conjunto constituído pelo Sol e todos
-            os corpos celestes que estão sob seu domínio gravitacional. A estrela central, maior componente do sistema,
-            respondendo por mais de 99,85% da massa total, gera sua energia através da fusão de hidrogênio em hélio,
-            dois de seus principais constituintes</p>
-    </div>
-    <hr class="col-11 m-auto" style="color: antiquewhite;" />
-    <br><br>
-
-    <!--Rodapé-->
-
-    <footer class="page-footer p-5 col-11 m-auto" style="background-color: #000;" id="footer">
-        <div class="text-center">
-            <a href="#">@2023 Copyright: Lucas Faria</a>
-        </div>
-    </footer>
+                <footer class="page-footer p-5 col-11 m-auto"
+                    style="background-color: #000;" id="footer">
+                    <div class="text-center">
+                        <a href="#">@2023 Copyright: Lucas Faria</a>
+                    </div>
+                </footer>
 
 
-</body>
+            </body>
 
-</html>
+        </html>
